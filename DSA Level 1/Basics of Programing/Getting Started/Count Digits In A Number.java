@@ -12,9 +12,9 @@ public class Main
     
     while(temp>0)
     {
-      int last_digit = temp%10;
-      count++;
       temp = temp/10;
+      count++;
+
     }
     System.out.print(count);
   }
