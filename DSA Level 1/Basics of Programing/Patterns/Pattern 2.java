@@ -2,7 +2,6 @@ import java.util.*;
 
 public class Main 
 {
-
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +20,7 @@ public class Main
             {
                 System.out.print("\t");
             }
-           
+         
             System.out.println();
         }
     }  
