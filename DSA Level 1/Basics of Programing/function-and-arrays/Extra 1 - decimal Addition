@@ -1,0 +1,32 @@
+package pepCodingDSA;
+import java.util.Scanner;
+
+public class decimalAddition 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter first number : ");
+		int num1 = sc.nextInt();
+		System.out.print("Enter Second number : ");
+		int num2 = sc.nextInt();
+		
+		int carry = 0;
+		int result = 0;
+		int power = 0;
+		
+		while(num1>0 || num2>0 || carry>0)
+		{
+			int sum = num1%10 + num2%10 + carry;
+			num1 = num1/10;
+			num2 = num2/10;
+			
+			carry = sum / 10;
+			sum = sum%10;
+			result = result + sum * (int)Math.pow(10, power);
+			
+			power++;
+		}
+		System.out.println("Result : " + result);
+	}
+}
