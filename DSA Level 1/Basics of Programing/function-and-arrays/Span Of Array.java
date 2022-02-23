@@ -14,19 +14,14 @@ public class Main
             a[i] = sc.nextInt();
         }
         
-        for(int i=0; i<n-1; i++)
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int i=0; i<n; i++)
         {
-            for(int j=0; j<n-1; j++)
-            {
-                if(a[j]>a[j+1])
-                {
-                    int temp = a[j];
-                    a[j] =  a[j+1];
-                    a[j+1] = temp;
-                }
-            }
+            max = (int)Math.max(max, a[i]);
+            min = (int)Math.min(min, a[i]);
         }
-
-        System.out.print(a[n-1] - a[0]);
+        int span = max-min;
+        System.out.print(span);
     }
 }
