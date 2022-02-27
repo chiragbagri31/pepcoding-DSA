@@ -21,22 +21,16 @@ public class Main
 
         int floor = 0;
         int ciel = 0;
-        
+
         while(low<=high)
         {
             int mid = (low + high)/2;
-            if(a[mid] == d)
-            {
-                System.out.print(a[mid] + "\n" + a[mid]);
-                break;
-            }
-
-            else if(a[mid]>d)
+          
+            if(a[mid] > d)
             {
                 high = mid - 1;
                 ciel = a[mid];
-            }
-            
+            }            
             else
             {
                 low = mid+1;
