@@ -26,7 +26,13 @@ public class Main
         {
             int mid = (low + high)/2;
           
-            if(a[mid] > d)
+            if(a[mid] == d)
+            {
+                ciel = floor = a[mid];
+                break;
+            }
+
+            else if(a[mid] > d)
             {
                 high = mid - 1;
                 ciel = a[mid];
