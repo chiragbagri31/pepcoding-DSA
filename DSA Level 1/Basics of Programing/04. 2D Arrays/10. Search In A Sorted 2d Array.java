@@ -20,7 +20,8 @@ public class Main
         int numFound = sc.nextInt();
         int foundI = -1;
         int foundJ = -1;
-
+        
+        // searching
         for(int i=0; i<n; i++)
         {
             for(int j=0; j<n; j++)
