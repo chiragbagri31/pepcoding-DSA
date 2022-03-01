@@ -9,7 +9,6 @@ public class Main
     public static void matrixMultiplication(int a1[][], int n1, int m1, int a2[][], int n2, int m2)
     {
         int resultMatrix[][] = new int[n1][m2];
-        // array multiplication
         if(m1 == n2)
         {
             for(int i=0; i<n1; i++)
